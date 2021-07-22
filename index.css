@@ -1,0 +1,28 @@
+
+body{
+    background-color: rgb(161, 255, 255);
+}
+
+
+.container{
+    background-color: white;
+    padding:10px 10px;
+    width : 300px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    box-shadow: 2px 2px 8px grey;
+    }
+
+
+
+.name{
+    padding: 10px 5px;
+    font-weight:bold;
+}
+
+
+.name:hover{
+    background-color: rgb(214, 203, 203);
+}

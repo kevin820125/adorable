@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+
+    </div>
+</body>
+</html>
+
+
+
+<script>
+data = [{"fname":"esme", "lname":"sanchez", "id":1892038, "isTherapist":true},
+
+{"fname":"rick", "lname":"jeps", "id":1894024, "isTherapist":false},
+
+{"fname":"angie", "lname":"lange", "id":1982403, "isTherapist":false},
+
+{"fname":"renat", "lname":"gros", "id":1894039, "isTherapist":true},
+
+{"fname":"bettino", "lname":"yang", "id":3789204, "isTherapist":true}];
+
+
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+
+for(let i of data){
+    let name = `${i["fname"].capitalize()}, ${i["lname"].capitalize()}`
+    divblock = document.createElement("div")
+    divblock.id = `${name}`
+    divblock.classList.add('name')
+    divblock.innerHTML = name
+    let g = document.querySelector(".container")
+    g.appendChild(divblock)
+}
+</script>
